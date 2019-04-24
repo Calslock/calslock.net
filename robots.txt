@@ -1,0 +1,4 @@
+User-Agent: *
+Disallow: /src/
+Disallow: /res/
+Disallow: /fonts/

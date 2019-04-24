@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+background-color: #363636;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+background-position: center; center;
+}
+@font-face {
+font-family: 'Consolas';
+src: url('//calslock.net/fonts/consola.woff') format('woff');
+}
+a:link, a:visited {
+color: #c9c9c9; 
+background-color: transparent; 
+text-decoration: none;
+}
+a:hover, a:active {
+color: #ffffff;
+background-color: transparent;
+text-decoration: none;
+}
+h2 {
+width: 100%;
+top: 0%;
+right: 2px;
+font-family: Consolas;
+font-size: 20px;
+color: #c9c9c9;
+text-align: right;
+}
+h3 {
+height: 50%;
+width: 100%;
+font-family: Consolas;
+font-size: 200px;
+color: #ff9933;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+h4 {
+width: 100%;
+font-family: Consolas;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+}
+</style>
+<title>/404/</title>
+</head>
+<body>
+<h2>
+<a href='#' onclick="goBack()">cd ../</a>
+</h2>
+<h3 id="title">
+404
+</h3>
+<h4 id="error">
+I'm trying, ok? Just... There is huge mess around here...
+</h4>
+<script>
+function goBack(){
+window.history.back();
+}
+</script>
+</body>
+</html>
