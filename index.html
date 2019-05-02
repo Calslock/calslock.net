@@ -6,40 +6,35 @@
 <meta name="theme-color" content="#8b31bc">
 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="/js/scripts.js"></script>
-<link rel="stylesheet" href="styles.css">
-<style>
-body{
-background-image: url('/img/backgr.jpg');
-}
-@font-face {
-font-family: 'Consolas';
-src: url('/fonts/consola.woff') format('woff');
-}
-@font-face {
-font-family: 'Cairo';
-src: url('/fonts/cairo.woff') format('woff');
-}
-</style>
+<link rel="stylesheet" href="/css/styles.css">
 </head>
 
-<body onload="typeWriter()" scroll="no" style="overflow: hidden">
+<body onload="titleAndDate()" scroll="no" style="overflow: hidden">
 
-<h4 id="left">
-<a href='https://steamcommunity.com/id/Calslock/'>./steam</a><br>
-<a href='https://github.com/Calslock/'>./github</a><br>
-<a href='https://gist.github.com/Calslock/'>./gist</a><br>
-<a href='https://paypal.me/Calslock/'>./paypal</a><br>
+<div id="container">
+
+<div id="left">
+<a href='//steamcommunity.com/id/Calslock/'>./steam</a><br>
+<a href='//github.com/Calslock/'>./github</a><br>
+<a href='//gist.github.com/Calslock/'>./gist</a><br>
+<a href='//paypal.me/Calslock/'>./paypal</a><br>
 <a href='mailto:admin@calslock.net'>./contact</a><br>
 <a href='#' class="hoverable"><span class="normal">./discord</span><span class="hover">Calslock#4485</span></a><br>
 <a href="/cloud/">./file_hosting</a><br>
-</h4>
+<a href='#' id="ip" onload="displayIP()"></a><br>
+</div>
 
-<h5 id="right">
+<div id="right">
 <a href='#' class="hoverable"><span class="normal">./info</span><span class="hover">This site doesn't store any of your data and doesn't have any ads. But it uses JavaScript. And cookies. But only to provide SSL connection. And probably doesn't work on IE.</span></a><br>
 <a href='#' onclick="funny()">./?</a><br>
 <a href='/10h/'>./10h</a><br>
-</h5>
+</div>
 
-<h3 id="title"></h3>
+<div class="title" id="title"></div>
+
+<div class="clock" id="clock"></div>
+
+</div>
+
 </body>
 </html>
