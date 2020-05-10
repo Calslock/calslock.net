@@ -1,5 +1,5 @@
-﻿var i=0;
-var text="./calslock";
+//var i=0;
+//var text="./calslock";
 
 function funny(){
 var random = Math.floor(Math.random()*3+1);
@@ -12,10 +12,10 @@ switch(random){
 
 function titleAndDate(){
   
-if (i<text.length){
+/*if (i<text.length){
     document.getElementById("title").innerHTML += text.charAt(i);
     i++; 
-  }
+  }*/
 
   var dt = new Date();
   document.getElementById("clock").innerHTML = dt.toLocaleTimeString();
