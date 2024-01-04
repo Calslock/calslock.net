@@ -1,0 +1,13 @@
+#RewriteEngine On
+#RewriteCond %{HTTPS} !=on
+#RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^(.*)$ https://www.calslock.net/$1 [R,L]
+#RewriteRule ^(.*)$ https://calslock.net/$1 [R,L]
+
+ErrorDocument 401 /er401.html
+ErrorDocument 403 /er403.html
+ErrorDocument 404 /er404.html
+ErrorDocument 500 /er500.html
